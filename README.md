@@ -17,11 +17,11 @@ without the features you wish they didn't have. Gengine is made of pure java, no
 In order to use Gengine Maven, you must add our repositories, then add the dependency in your **pom.xml**
 ```xml
 <repository>
-    <id>athen-repo</id>
+    <id>athen-releases</id>
     <url>http://athen.cc:8082/artifactory/libs-release/</url>
 </repository>
 <repository>
-    <id>athen-repo</id>
+    <id>athen-snapshots</id>
     <url>http://athen.cc:8082/artifactory/libs-snapshot/</url>
 </repository>
 
