@@ -14,26 +14,32 @@ without the features you wish they didn't have. Gengine is made of pure java, no
 **Setting up your project**\
 \
 *Maven*\
-In order to use Gengine Maven, you must add our repository, then add the dependency in your **pom.xml**
+In order to use Gengine Maven, you must add our repositories, then add the dependency in your **pom.xml**
 ```xml
 <repository>
     <id>athen-repo</id>
     <url>http://athen.cc:8082/artifactory/libs-release/</url>
 </repository>
+<repository>
+    <id>athen-repo</id>
+    <url>http://athen.cc:8082/artifactory/libs-snapshot/</url>
+</repository>
 
 <dependency>
     <groupId>me.gleeming.gengine</groupId>
     <artifactId>gengine</artifactId>
-    <version>1.0-20200815.044625-1</version>
-</dependency>
+    <version>1.0-20200816.223425-1</version>
+    <scope>compile</scope>
+ </dependency>
 ```
 \
 *Gradle*\
-In order to use Gengine Gradle, you must add our repository, then add the dependency in your **build.gradle**
+In order to use Gengine Gradle, you must add our repositories, then add the dependency in your **build.gradle**
 ```gradle
 repositories {
     maven {
         url "http://athen.cc:8082/artifactory/libs-release/"
+        url "http://athen.cc:8082/artifactory/libs-snapshot/"
     }
 }
 
